@@ -43,7 +43,7 @@ defmodule ShopWeb do
         layouts: [html: ShopWeb.Layouts]
 
       import Plug.Conn
-      import ShopWeb.Gettext
+      use Gettext, backend: ShopWeb.Gettext
 
       unquote(verified_routes())
     end
@@ -85,7 +85,7 @@ defmodule ShopWeb do
       import Phoenix.HTML
       # Core UI components and translation
       import ShopWeb.CoreComponents
-      import ShopWeb.Gettext
+      use Gettext, backend: ShopWeb.Gettext
 
       # Shortcut for generating JS commands
       alias Phoenix.LiveView.JS
