@@ -1,6 +1,6 @@
 # Shop
 
-Shop is a (very) simple e-commerce store built throughout the Phoenix crash course
+Shop is a (very) simple e-commerce store built throughout the [Phoenix crash course](https://www.youtube.com/playlist?list=PLbV6TI03ZWYXKCJePfD8G34hyWdW_WLFk)
 
 ## The Tech Stack
 
