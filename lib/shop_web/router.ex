@@ -1,6 +1,8 @@
 defmodule ShopWeb.Router do
   use ShopWeb, :router
 
+  alias ShopWeb.Plugs
+
   pipeline :browser do
     plug :accepts, ["html"]
     plug :fetch_session
@@ -8,6 +10,7 @@ defmodule ShopWeb.Router do
     plug :put_root_layout, html: {ShopWeb.Layouts, :root}
     plug :protect_from_forgery
     plug :put_secure_browser_headers
+    plug Plugs.SetConsole, "pc"
   end
 
   pipeline :api do
