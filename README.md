@@ -21,3 +21,9 @@ We love our contributors! Here's how you can contribute:
 
 - [Open an issue](https://github.com/danielbergholz/shop/issues) if you believe you've encountered a bug.
 - Make a [pull request](https://github.com/danielbergholz/shop/pull) to add new features/make quality-of-life improvements/fix bugs.
+
+<!-- Made with [contrib.rocks](https://contrib.rocks)
+
+<a href="https://github.com/danielbergholz/shop/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=danielbergholz/shop" />
+</a> -->
