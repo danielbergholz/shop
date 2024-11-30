@@ -1,11 +1,7 @@
 defmodule ShopWeb.ProductJSON do
-  def index(_assigns) do
+  def index(%{products: products}) do
     %{
-      data: [
-        %{name: "God of war"},
-        %{name: "Skyrim"},
-        %{name: "Diablo 4"}
-      ]
+      data: products
     }
   end
 end
