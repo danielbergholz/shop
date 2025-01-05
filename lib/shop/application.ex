@@ -11,8 +11,7 @@ defmodule Shop.Application do
       ShopWeb.Telemetry,
       Shop.Repo,
       {Ecto.Migrator,
-        repos: Application.fetch_env!(:shop, :ecto_repos),
-        skip: skip_migrations?()},
+       repos: Application.fetch_env!(:shop, :ecto_repos), skip: skip_migrations?()},
       {DNSCluster, query: Application.get_env(:shop, :dns_cluster_query) || :ignore},
       {Phoenix.PubSub, name: Shop.PubSub},
       # Start the Finch HTTP client for sending emails

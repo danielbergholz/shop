@@ -7,7 +7,7 @@ defmodule ShopWeb.ProductHTML do
 
   def product(assigns) do
     ~H"""
-    <p>Game: <%= @name %></p>
+    <p>Game: {@name}</p>
     """
   end
 end
