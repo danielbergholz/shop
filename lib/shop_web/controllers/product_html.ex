@@ -1,6 +1,6 @@
 defmodule ShopWeb.ProductHTML do
   use ShopWeb, :html
-  alias Shop.Product
+  alias Shop.Products.Product
 
   embed_templates "product_html/*"
 
