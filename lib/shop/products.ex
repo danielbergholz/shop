@@ -8,7 +8,7 @@ defmodule Shop.Products do
     Repo.get_by(Product, slug: slug)
   end
 
-  def find_product_by_id(id) do
+  def find_product_by_id(id) when is_integer(id) or is_binary(id) do
     Repo.get(Product, id)
   end
 

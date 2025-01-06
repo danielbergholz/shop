@@ -11,7 +11,7 @@ defmodule Shop.Products.Product do
   end
 
   @doc false
-  def changeset(product, attrs) do
+  def changeset(product = %__MODULE__{}, attrs) do
     product
     |> cast(attrs, [:name, :console])
     |> validate_required([:name, :console])
@@ -21,7 +21,7 @@ defmodule Shop.Products.Product do
     |> unique_constraint(:slug)
   end
 
-  defp format_name(changeset) do
+  defp format_name(changeset = %Ecto.Changeset{}) do
     name =
       changeset.changes.name
       |> String.trim()
@@ -29,7 +29,7 @@ defmodule Shop.Products.Product do
     put_change(changeset, :name, name)
   end
 
-  defp generate_slug(changeset) do
+  defp generate_slug(changeset = %Ecto.Changeset{}) do
     slug =
       changeset.changes.name
       |> String.downcase()
