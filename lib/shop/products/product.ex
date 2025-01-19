@@ -2,6 +2,7 @@ defmodule Shop.Products.Product do
   use Ecto.Schema
   import Ecto.Changeset
 
+  @derive {Jason.Encoder, only: [:name, :console, :slug]}
   schema "products" do
     field :name, :string
     field :console, Ecto.Enum, values: [:pc, :xbox, :nintendo, :playstation]
