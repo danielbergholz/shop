@@ -1,5 +1,5 @@
 defmodule Shop.PromotionsTest do
-  use Shop.DataCase, async: true
+  use Shop.DataCase
 
   alias Shop.Promotions
 

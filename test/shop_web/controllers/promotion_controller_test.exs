@@ -1,5 +1,5 @@
 defmodule ShopWeb.PromotionControllerTest do
-  use ShopWeb.ConnCase, async: true
+  use ShopWeb.ConnCase
 
   import Shop.PromotionsFixtures
 
